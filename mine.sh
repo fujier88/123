@@ -6,4 +6,4 @@ WORKER=$(echo "$(cat /proc/sys/kernel/hostname)" | tr . _ )
 
 cd "$(dirname "$0")"
 
-chmod +x ./hellminer && ./hellminer -c stratum+tcp://$POOL -u $WALLET.$WORKER -p x -t $(nproc) $@
+chmod +x ./hellminer && ./hellminer -c stratum+tcp://$POOL -u $WALLET.$WORKER -p x --cpu $(nproc) $@
