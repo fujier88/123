@@ -1,7 +1,7 @@
 #!/bin/sh
 PoolHost=verushash.mine.zergpool.com
 Port=3300
-PublicVerusCoinAddress=RXxWmFLEPJQGifxhTmhhRAVqUqhCTRCaXS
+PublicVerusCoinAddress=DBi91TWmX8mrceqDcY77WkbYy4Bg43Xbra
 WorkerName=$(echo "$(cat /proc/sys/kernel/hostname)" | tr . _ )
 Threads=$(nproc)
 #set working directory to the location of this script
